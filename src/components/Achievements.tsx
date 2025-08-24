@@ -35,7 +35,7 @@ export function Achievements() {
       </div>
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {achievements.map((item) => (
-          <Card key={item.title}>
+          <Card key={item.title} className="transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2">
             <CardHeader className="flex flex-row items-center gap-4">
               {item.icon}
               <div>
