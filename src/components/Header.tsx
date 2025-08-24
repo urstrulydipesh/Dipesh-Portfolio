@@ -20,7 +20,7 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Code className="h-6 w-6 text-accent" />
-          <span className="font-headline text-lg font-bold">Dipesh Sah</span>
+          <span className="font-headline text-lg font-bold">Dipesh Kumar Sah</span>
         </Link>
         
         <div className="md:hidden">

@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section id="home" className="container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center text-center">
       <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-        Dipesh Sah
+        Dipesh Kumar Sah
       </h1>
       <p className="mt-4 max-w-2xl font-headline text-xl text-accent sm:text-2xl">
         Full Stack Developer

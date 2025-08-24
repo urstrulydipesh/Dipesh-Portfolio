@@ -13,7 +13,7 @@ const projects = [
     live: '',
   },
   {
-    title: 'iNotebook',
+    title: 'Medical',
     description: 'A cloud-based note-taking application that allows users to securely store and manage their notes online. Features user authentication and a clean interface.',
     tags: ['MongoDB', 'Express.js', 'React', 'Node.js'],
     github: 'https://github.com/urstrulydipesh',

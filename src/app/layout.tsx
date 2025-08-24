@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Dipesh Sah | Portfolio',
-  description: "Dipesh Sah's personal portfolio showcasing projects, skills, and experience.",
+  title: 'Dipesh Kumar Sah | Portfolio',
+  description: "Dipesh Kumar Sah's personal portfolio showcasing projects, skills, and experience.",
 };
 
 export default function RootLayout({

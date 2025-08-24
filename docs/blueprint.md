@@ -1,4 +1,4 @@
-# **App Name**: Dipesh Sah Portfolio
+# **App Name**: Dipesh Kumar Sah Portfolio
 
 ## Core Features:
 
