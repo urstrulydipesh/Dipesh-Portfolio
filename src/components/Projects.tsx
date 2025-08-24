@@ -41,7 +41,7 @@ export function Projects() {
       </div>
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <Card key={project.title} className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20">
+          <Card key={project.title} className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2">
             <CardHeader>
               <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
             </CardHeader>
