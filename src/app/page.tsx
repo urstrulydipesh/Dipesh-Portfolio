@@ -1,4 +1,5 @@
 import { Achievements } from '@/components/Achievements';
+import { AnimatedSection } from '@/components/AnimatedSection';
 import { Experience } from '@/components/Experience';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
@@ -11,11 +12,21 @@ export default function Home() {
     <div className="flex min-h-dvh w-full flex-col">
       <Header />
       <main className="flex-1">
-        <Hero />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Achievements />
+        <AnimatedSection>
+          <Hero />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Experience />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Projects />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Skills />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Achievements />
+        </AnimatedSection>
       </main>
       <Footer />
     </div>
