@@ -12,11 +12,11 @@ export function Hero() {
         Full Stack Developer
       </p>
       <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-        Passionate about building modern web applications and solving complex problems. I have experience with the MERN stack and a strong foundation in computer science principles.
+      Passionate about building modern, scalable web applications. Experienced in the MERN stack, with a strong foundation in computer science principles, I specialize in designing efficient solutions, integrating APIs, and delivering high-quality user experiences.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-4">
         <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
-          <Link href="mailto:dipeshsah@example.com">
+          <Link href="mailto:dipesh.shah546@gmail.com">
             <Mail className="mr-2 h-4 w-4" />
             Contact Me
           </Link>
