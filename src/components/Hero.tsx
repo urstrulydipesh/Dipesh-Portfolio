@@ -22,7 +22,7 @@ export function Hero() {
           </Link>
         </Button>
         <Button asChild variant="secondary">
-          <Link href="#" target="_blank" download>
+          <Link href="https://drive.google.com/file/d/13rvj0kmeoOwr67tlYDmfRjsRJc8TgK5c/view?usp=sharing" target="_blank" rel="noopener noreferrer">
              <Download className="mr-2 h-4 w-4" />
             Download Resume
           </Link>
