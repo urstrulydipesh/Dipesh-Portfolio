@@ -8,21 +8,6 @@ export function Hero() {
       id="home"
       className="relative flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center text-center overflow-hidden"
     >
-      {/* Background video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-      >
-        <source src="/background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Semi-transparent overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50 -z-5"></div>
-
       {/* Hero content */}
       <div className="relative z-10 px-4 sm:px-6 lg:px-8">
         <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fadeInDown">
