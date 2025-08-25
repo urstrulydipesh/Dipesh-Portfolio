@@ -77,7 +77,7 @@ export function Projects() {
         {projects.map((project) => (
           <Card
             key={project.title}
-            className="relative flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 bg-card/80 backdrop-blur-sm"
+            className="relative flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 bg-card/60 backdrop-blur-sm"
           >
             {/* Header with title and status badge */}
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start px-4 pt-4">

@@ -1,3 +1,4 @@
+
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -50,7 +51,7 @@ export function Skills() {
         {Object.entries(skillsData).map(([category, skills]) => (
           <Card
             key={category}
-            className="group relative overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 bg-card/80 backdrop-blur-sm"
+            className="group relative overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 bg-card/60 backdrop-blur-sm"
           >
             <CardContent className="relative z-10 pt-6">
               <h3 className="font-headline text-lg font-semibold text-accent mb-2">

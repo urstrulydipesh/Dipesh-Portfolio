@@ -63,7 +63,7 @@ export function Achievements() {
         {achievements.map((item) => (
           <Card
             key={item.title}
-            className="relative transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 group bg-card/80 backdrop-blur-sm"
+            className="relative transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 group bg-card/60 backdrop-blur-sm"
           >
             <CardHeader className="flex flex-row items-center gap-4">
               {item.icon}
