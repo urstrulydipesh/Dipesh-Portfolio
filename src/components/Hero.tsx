@@ -4,35 +4,68 @@ import Link from 'next/link';
 
 export function Hero() {
   return (
-    <section id="home" className="container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center text-center">
-      <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+    <section
+      id="home"
+      className="container flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center text-center"
+    >
+      <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fadeInDown">
         Dipesh Kumar Sah
       </h1>
-      <p className="mt-4 max-w-2xl font-headline text-xl text-accent sm:text-2xl">
+
+      <p className="mt-4 max-w-2xl font-headline text-xl text-accent sm:text-2xl animate-fadeInUp delay-200">
         Full Stack Developer
       </p>
-      <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-      Passionate about building modern, scalable web applications. Experienced in the MERN stack, with a strong foundation in computer science principles, I specialize in designing efficient solutions, integrating APIs, and delivering high-quality user experiences.
+
+      <p className="mt-6 max-w-2xl text-lg text-muted-foreground animate-fadeInUp delay-400">
+        Passionate about building modern, scalable web applications. Experienced in the MERN stack,
+        with a strong foundation in computer science principles, I specialize in designing efficient
+        solutions, integrating APIs, and delivering high-quality user experiences.
       </p>
-      <div className="mt-8 flex flex-wrap justify-center gap-4">
-        <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
-          <Link href="mailto:dipesh.shah546@gmail.com">
+
+      {/* Buttons with yellow glow hover effect */}
+      <div className="mt-8 flex flex-wrap justify-center gap-4 animate-fadeInUp delay-600">
+        <Button asChild variant="default" className="relative overflow-hidden group bg-primary hover:bg-primary/90 transition">
+          <Link href="mailto:dipesh.shah546@gmail.com" className="relative z-10 flex items-center">
             <Mail className="mr-2 h-4 w-4" />
             Contact Me
+            {/* Yellow glow */}
+            <span className="absolute inset-0 rounded-md bg-yellow-400 opacity-0 transition duration-300 group-hover:opacity-20 blur-lg"></span>
           </Link>
         </Button>
-        <Button asChild variant="secondary">
-          <Link href="https://drive.google.com/file/d/13rvj0kmeoOwr67tlYDmfRjsRJc8TgK5c/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-             <Download className="mr-2 h-4 w-4" />
+
+        <Button asChild variant="secondary" className="relative overflow-hidden group transition">
+          <Link
+            href="https://drive.google.com/file/d/13rvj0kmeoOwr67tlYDmfRjsRJc8TgK5c/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative z-10 flex items-center"
+          >
+            <Download className="mr-2 h-4 w-4" />
             Download Resume
+            {/* Yellow glow */}
+            <span className="absolute inset-0 rounded-md bg-yellow-400 opacity-0 transition duration-300 group-hover:opacity-20 blur-lg"></span>
           </Link>
         </Button>
       </div>
-      <div className="mt-8 flex justify-center gap-6">
-        <Link href="https://github.com/urstrulydipesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+
+      {/* Social icons with tilt animation */}
+      <div className="mt-8 flex justify-center gap-6 animate-fadeIn delay-600">
+        <Link
+          href="https://github.com/urstrulydipesh"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          className="transform transition duration-300 hover:-rotate-6 hover:scale-110"
+        >
           <Github className="h-8 w-8 text-muted-foreground transition-colors hover:text-accent" />
         </Link>
-        <Link href="https://linkedin.com/in/urstrulydipesh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <Link
+          href="https://linkedin.com/in/urstrulydipesh"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="transform transition duration-300 hover:rotate-6 hover:scale-110"
+        >
           <Linkedin className="h-8 w-8 text-muted-foreground transition-colors hover:text-accent" />
         </Link>
       </div>

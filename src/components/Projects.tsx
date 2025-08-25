@@ -6,25 +6,44 @@ import Link from 'next/link';
 
 const projects = [
   {
-    title: 'Blog Express',
-    description: 'A full-featured blogging platform built with the MERN stack. It includes user authentication, CRUD operations for posts, and a modern, responsive UI.',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JWT'],
+    title: 'Real-Time Chat Platform',
+    description: 'A real-time chat app with authentication, chat rooms, and instant messaging using React, Node.js, Express, MongoDB, and Socket.IO. Responsive UI with scalable backend.',
+    tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO'],
     github: 'https://github.com/urstrulydipesh',
     live: '',
+    status: 'Ongoing',
   },
   {
-    title: 'Medical',
-    description: 'A cloud-based note-taking application that allows users to securely store and manage their notes online. Features user authentication and a clean interface.',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+    title: 'Doctor Appointment Website',
+    description: 'A full-stack medical appointment booking system with JWT authentication, doctor directory, real-time scheduling, and patient dashboards using the MERN stack and TailwindCSS.',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'TailwindCSS', 'JWT'],
     github: 'https://github.com/urstrulydipesh',
     live: '',
+    status: 'Ongoing',
   },
   {
-    title: 'Real-Time Code Editor',
-    description: 'A collaborative code editor that enables multiple users to write and edit code in real-time. Built using Socket.io for seamless synchronization.',
-    tags: ['React', 'Socket.io', 'Node.js'],
+    title: 'Movie Recommendation System',
+    description: 'Content-based movie recommender using Python, Pandas, and Scikit-Learn with TF-IDF and cosine similarity. Includes a Streamlit frontend for real-time suggestions.',
+    tags: ['Python', 'Pandas', 'Scikit-Learn', 'NLP', 'Streamlit'],
     github: 'https://github.com/urstrulydipesh',
     live: '',
+    status: 'Completed',
+  },
+  {
+    title: 'E-commerce Website (InkSloth)',
+    description: 'A WordPress-based apparel store using WooCommerce and Elementor. Includes product catalog, cart, authentication, and optimized SEO with responsive UI.',
+    tags: ['WordPress', 'WooCommerce', 'Elementor', 'SEO'],
+    github: 'https://github.com/urstrulydipesh',
+    live: '',
+    status: 'Completed',
+  },
+  {
+    title: 'Interactive To-Do List',
+    description: 'A responsive task management app with add, edit, delete, and completion tracking using React.js, Tailwind CSS, and Hooks. Deployed on Netlify.',
+    tags: ['React', 'TailwindCSS', 'JavaScript', 'Vite'],
+    github: 'https://github.com/urstrulydipesh',
+    live: '',
+    status: 'Completed',
   },
 ];
 
@@ -36,19 +55,36 @@ export function Projects() {
           My Projects
         </h2>
         <p className="mt-2 text-lg text-muted-foreground">
-          A selection of projects I've worked on.
+          A showcase of diverse projects that demonstrate my expertise in building scalable, real-world applications with modern technologies.
         </p>
       </div>
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <Card key={project.title} className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2">
+          <Card
+            key={project.title}
+            className="relative flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2"
+          >
+            {/* Status Badge */}
+            <div className="absolute top-3 right-3">
+              <Badge
+                variant={project.status === 'Completed' ? 'default' : 'secondary'}
+                className={project.status === 'Completed' ? 'bg-green-500 text-white' : 'bg-yellow-500 text-black'}
+              >
+                {project.status}
+              </Badge>
+            </div>
+
             <CardHeader>
               <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
             </CardHeader>
             <CardContent className="flex-grow">
               <CardDescription>{project.description}</CardDescription>
               <div className="mt-4 flex flex-wrap gap-2">
-                {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
+                {project.tags.map((tag) => (
+                  <Badge key={tag} variant="secondary">
+                    {tag}
+                  </Badge>
+                ))}
               </div>
             </CardContent>
             <CardFooter>
@@ -59,14 +95,12 @@ export function Projects() {
                     GitHub
                   </Link>
                 </Button>
-                {project.live && (
-                  <Button asChild variant="ghost" size="sm">
-                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
-                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </Link>
-                  </Button>
-                )}
+                <Button asChild variant="outline" size="sm">
+                  <Link href={project.live || '#'} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    See Project
+                  </Link>
+                </Button>
               </div>
             </CardFooter>
           </Card>
