@@ -12,7 +12,7 @@ const experiences = [
     description:
       'Completed a structured internship under IBM SkillsBuild, gaining hands-on experience with HTML, CSS, JavaScript, and UI/UX principles. Built responsive web interfaces and interactive features while delivering high-quality, on-time project modules.',
     tags: ['HTML', 'CSS', 'JavaScript', 'UI/UX'],
-    certificateLink: 'YOUR_IBM_CERTIFICATE_LINK_HERE', // replace with real link
+    certificateLink: 'https://drive.google.com/file/d/1hlmmfGCFFcR_ugvddx5BJvwUs3XyTZy3/view?usp=sharing', // replace with real link
     completionDate: 'August 2024',
   },
   {
@@ -22,7 +22,7 @@ const experiences = [
     description:
       'Developed a MERN-based medical appointment booking system with JWT authentication and role-based access (Patient/Doctor/Admin). Implemented doctor directory search, real-time scheduling with conflict detection, and responsive patient dashboards.',
     tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
-    certificateLink: 'YOUR_USICT_CERTIFICATE_LINK_HERE', // replace with real link
+    certificateLink: 'https://dipesh-sah-portfolio.netlify.app/', // replace with real link
     completionDate: 'Ongoing',
   },
 ];

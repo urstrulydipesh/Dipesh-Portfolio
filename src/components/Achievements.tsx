@@ -9,21 +9,21 @@ const achievements = [
     title: 'Membership Chair',
     source: 'USICT ACM Students Chapter (2024 - Present)',
     description: 'Managed recruitment, onboarding, and member records while organizing drives, workshops, and events to enhance engagement and ensure compliance with ACM standards.',
-    link: '#', // Add link here
+    link: 'https://usict.acm.org/', // Add link here
   },
   {
     icon: <Presentation className="h-8 w-8 text-accent" />,
     title: 'Workshops & Speaker Sessions',
     source: 'ACM / IEEE',
     description: 'Conducted impactful workshops & speaker sessions on Web Development, AI/ML, and other emerging technologies, mentoring students and fostering innovation and leadership.',
-    link: '#', // Add link here
+    link: 'https://usict.acm.org/events.php', // Add link here
   },
   {
     icon: <Activity className="h-8 w-8 text-accent" />,
     title: 'Core Organizing Team',
     source: 'ACM Inter-College Hackathon — HashTech',
     description: 'Organized a 24-hour inter-college hackathon with 150+ participants, contributing to event planning, logistics, and smooth execution of the competition.',
-    link: '#', // Add link here
+    link: 'https://usict.acm.org/hashtech/', // Add link here
   },
   {
     icon: <Award className="h-8 w-8 text-accent" />,
@@ -37,14 +37,14 @@ const achievements = [
     title: 'Data Fundamentals',
     source: 'IBM SkillsBuild',
     description: 'Earned a digital credential in Data Fundamentals (Analytics, Visualization, Data Science), demonstrating proficiency in data handling and analytical concepts.',
-    link: '#', // Add link here
+    link: 'https://drive.google.com/file/d/16AmGuB8-M3TpCiI1d7GnqXXGLCLJGMi9/view?usp=sharing', // Add link here
   },
   {
     icon: <CalendarCheck className="h-8 w-8 text-accent" />,
     title: 'LeetCode Streak',
     source: 'Personal Achievement',
     description: 'Maintained a 200+ day streak on LeetCode, reflecting discipline, consistency, and strengthening of DSA and competitive programming skills.',
-    link: '#', // Add link here
+    link: 'https://leetcode.com/u/urstrulydipesh/', // Add link here
   },
 ];
 

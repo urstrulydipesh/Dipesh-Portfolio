@@ -17,7 +17,7 @@ const projects = [
     title: 'Doctor Appointment Website',
     description: 'A full-stack medical appointment booking system with JWT authentication, doctor directory, real-time scheduling, and patient dashboards using the MERN stack and TailwindCSS.',
     tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'TailwindCSS', 'JWT'],
-    github: 'https://github.com/urstrulydipesh',
+    github: 'https://github.com/urstrulydipesh/MediCare-Doctor',
     live: '',
     status: 'Ongoing',
   },
@@ -25,7 +25,7 @@ const projects = [
     title: 'Movie Recommendation System',
     description: 'Content-based movie recommender using Python, Pandas, and Scikit-Learn with TF-IDF and cosine similarity. Includes a Streamlit frontend for real-time suggestions.',
     tags: ['Python', 'Pandas', 'Scikit-Learn', 'NLP', 'Streamlit'],
-    github: 'https://github.com/urstrulydipesh',
+    github: 'https://github.com/urstrulydipesh/movie-recommender',
     live: '',
     status: 'Completed',
   },
@@ -34,15 +34,23 @@ const projects = [
     description: 'A WordPress-based apparel store using WooCommerce and Elementor. Includes product catalog, cart, authentication, and optimized SEO with responsive UI.',
     tags: ['WordPress', 'WooCommerce', 'Elementor', 'SEO'],
     github: 'https://github.com/urstrulydipesh',
-    live: '',
+    live: 'https://inksloth.com/',
     status: 'Completed',
   },
   {
     title: 'Interactive To-Do List',
     description: 'A responsive task management app with add, edit, delete, and completion tracking using React.js, Tailwind CSS, and Hooks. Deployed on Netlify.',
     tags: ['React', 'TailwindCSS', 'JavaScript', 'Vite'],
-    github: 'https://github.com/urstrulydipesh',
-    live: '',
+    github: 'https://github.com/urstrulydipesh/To-Do-List',
+    live: 'https://to-do-list-dipesh.netlify.app/',
+    status: 'Completed',
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description: 'A minimalistic and professional personal portfolio built with Next.js and TailwindCSS. Showcases projects, skills, experience, and allows users to connect via LinkedIn, GitHub, and other profiles.',
+    tags: ['Next.js', 'TailwindCSS', 'React', 'JavaScript'],
+    github: 'https://github.com/urstrulydipesh/Dipesh-Portfolio',
+    live: 'https://dipesh-sah-portfolio.netlify.app/',
     status: 'Completed',
   },
 ];
@@ -89,13 +97,13 @@ export function Projects() {
             </CardContent>
             <CardFooter>
               <div className="flex w-full justify-start gap-4">
-                <Button asChild variant="outline" size="sm">
+                <Button asChild variant="outline" size="sm" className="transition-all hover:bg-yellow-400 hover:text-black">
                   <Link href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="sm">
+                <Button asChild variant="outline" size="sm" className="transition-all hover:bg-yellow-400 hover:text-black">
                   <Link href={project.live || '#'} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     See Project
