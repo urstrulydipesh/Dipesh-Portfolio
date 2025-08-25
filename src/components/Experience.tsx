@@ -29,7 +29,7 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="container py-24 sm:py-32">
+    <section id="experience" className="container py-16 sm:py-20">
       <div className="mx-auto max-w-2xl lg:text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
           Work Experience
@@ -72,7 +72,7 @@ export function Experience() {
                     </Badge>
                   </div>
 
-                  <Card className="mt-2 w-full hover:scale-[1.02] hover:shadow-lg transition-all duration-300 ease-in-out">
+                  <Card className="mt-2 w-full hover:scale-[1.02] hover:shadow-lg transition-all duration-300 ease-in-out bg-card/80 backdrop-blur-sm">
                     <CardHeader>
                       <CardTitle className="font-headline text-xl">{exp.role}</CardTitle>
                       <CardDescription>{exp.company}</CardDescription>

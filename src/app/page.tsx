@@ -20,7 +20,7 @@ export default function Home() {
         <source src="/background.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="fixed top-0 left-0 w-full h-full bg-black/60 -z-10"></div>
+      <div className="fixed top-0 left-0 w-full h-full bg-black/70 -z-10"></div>
       
       <div className="relative z-10">
         <Header />

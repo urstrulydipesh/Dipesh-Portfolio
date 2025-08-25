@@ -28,7 +28,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="container bg-background py-24 sm:py-32 relative overflow-hidden"
+      className="container py-16 sm:py-20 relative overflow-hidden"
     >
       {/* Subtle purple background animation like Projects */}
       <div className="absolute inset-0 -z-10">
@@ -50,9 +50,9 @@ export function Skills() {
         {Object.entries(skillsData).map(([category, skills]) => (
           <Card
             key={category}
-            className="group relative overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2"
+            className="group relative overflow-hidden transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 bg-card/80 backdrop-blur-sm"
           >
-            <CardContent className="relative z-10">
+            <CardContent className="relative z-10 pt-6">
               <h3 className="font-headline text-lg font-semibold text-accent mb-2">
                 {category}
               </h3>

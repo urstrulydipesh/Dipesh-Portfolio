@@ -50,7 +50,7 @@ const achievements = [
 
 export function Achievements() {
   return (
-    <section id="achievements" className="container py-24 sm:py-32">
+    <section id="achievements" className="container py-16 sm:py-20">
       <div className="mx-auto max-w-2xl lg:text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
           Achievements & Activities
@@ -63,7 +63,7 @@ export function Achievements() {
         {achievements.map((item) => (
           <Card
             key={item.title}
-            className="relative transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 group"
+            className="relative transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 group bg-card/80 backdrop-blur-sm"
           >
             <CardHeader className="flex flex-row items-center gap-4">
               {item.icon}

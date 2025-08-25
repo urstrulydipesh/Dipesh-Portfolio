@@ -63,7 +63,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="container bg-background py-24 sm:py-32">
+    <section id="projects" className="container py-16 sm:py-20">
       <div className="mx-auto max-w-2xl lg:text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
           My Projects
@@ -77,7 +77,7 @@ export function Projects() {
         {projects.map((project) => (
           <Card
             key={project.title}
-            className="relative flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2"
+            className="relative flex flex-col overflow-hidden transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 bg-card/80 backdrop-blur-sm"
           >
             {/* Header with title and status badge */}
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start px-4 pt-4">
