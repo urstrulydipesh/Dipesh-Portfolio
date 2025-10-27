@@ -44,10 +44,10 @@ export function Hero() {
             className="relative overflow-hidden group transition"
           >
             <Link
-              href="https://drive.google.com/file/d/13rvj0kmeoOwr67tlYDmfRjsRJc8TgK5c/view?usp=sharing"
+              href="https://drive.google.com/file/d/1mOTED842wd_Jr4B2fC9vc1Hkz7l2LKZL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative z-10 flex items-center"
+              className="relative z-10 flex items-center" 
             >
               <Download className="mr-2 h-4 w-4" />
               Download Resume
