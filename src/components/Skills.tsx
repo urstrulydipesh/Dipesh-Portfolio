@@ -3,7 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
 const skillsData = {
-  Languages: ['C', 'C++', 'Java', 'Python', 'PHP', 'JavaScript'],
+  Languages: ['C', 'C++', 'Java', 'Python', 'PHP', 'JavaScript' , 'TypeScript'],
   Tools: ['GIT', 'GitHub', 'Google Colab', 'VS Code', 'Jupyter Notebook'],
   Database: ['MySQL', 'MongoDB', 'Firebase'],
   Frontend: [
@@ -15,7 +15,7 @@ const skillsData = {
     'ReactJs',
     'BootStrap Studio',
   ],
-  Backend: ['PHP', 'NodeJs', 'REST APIs', 'Socket.io'],
+  Backend: ['PHP', 'NodeJs', 'REST APIs', 'Socket.io' , 'Express.js' , 'JWT' ],
   'Soft Skills': [
     'Leadership',
     'Event Management',

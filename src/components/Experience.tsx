@@ -7,7 +7,7 @@ import Link from 'next/link';
 const experiences = [
   {
     role: 'Frontend Web Developer',
-    company: 'IBM SkillsBuild Remote',
+    company: 'IBM ',
     period: 'June 2024 - August 2024',
     description:
       'Completed a structured internship under IBM SkillsBuild, gaining hands-on experience with HTML, CSS, JavaScript, and UI/UX principles. Developed responsive web interfaces and interactive features using industry best practices. Received positive feedback for high-quality code, creativity, and consistent on-time delivery of all project modules.',
@@ -17,13 +17,13 @@ const experiences = [
   },
   {
     role: 'Full Stack Web Developer',
-    company: 'USICT — Academic Internship Project Remote',
-    period: 'July 2025 - Present',
+    company: 'USICT — Academic Internship Project ',
+    period: 'July 2025 - November 2025',
     description:
       'Built a MERN-based medical appointment booking system with JWT authentication and role-based access. Developed doctor directory with filters, real-time appointment scheduling with conflict detection, and a responsive patient dashboard. Automated booking workflows, reduced scheduling friction, and gained hands-on experience in RESTful API design and scalable systems.',
     tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JWT', 'TailwindCSS'],
-    status: 'Ongoing',
-    certificateLink: '#', // Add certificate link
+    status: 'Completed',
+    certificateLink: 'https://drive.google.com/file/d/1ieGq-u-TDeJ3zIKOJwSYJReJAeoc5af9/view?usp=drive_link', // Add certificate link
   },
 ];
 

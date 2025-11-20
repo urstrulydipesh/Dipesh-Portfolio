@@ -7,16 +7,16 @@ const achievements = [
   {
     icon: <Users className="h-8 w-8 text-accent" />,
     title: 'Membership Chair',
-    source: 'USICT ACM Students Chapter (2024 - Present)',
+    source: 'USIC&T ACM Students Chapter (2024)',
     description: 'Managed recruitment, onboarding, and member records while organizing drives, workshops, and events to enhance engagement and ensure compliance with ACM standards.',
-    link: 'https://usict.acm.org/', // Add link here
+    link: 'https://usict.acm.org/team.php', // Add link here
   },
   {
     icon: <Presentation className="h-8 w-8 text-accent" />,
-    title: 'Workshops & Speaker Sessions',
-    source: 'ACM / IEEE',
-    description: 'Conducted impactful workshops & speaker sessions on Web Development, AI/ML, and other emerging technologies, mentoring students and fostering innovation and leadership.',
-    link: 'https://usict.acm.org/events.php', // Add link here
+    title: 'Complete Web Development Bootcamp',
+    source: 'Udemy - Hitesh Choudhary',
+    description: 'Completed a 97-hour comprehensive Web Development course covering modern full-stack fundamentals, including HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, API development, authentication, deployment, and real-world project building.',
+    link: 'https://drive.google.com/file/d/1DTndSWbn1h5uWcCCRPOSwcM-Qo938tHT/view?usp=drive_link', // Add link here
   },
   {
     icon: <Activity className="h-8 w-8 text-accent" />,
@@ -27,10 +27,10 @@ const achievements = [
   },
   {
     icon: <Award className="h-8 w-8 text-accent" />,
-    title: '3rd Runner-Up',
-    source: 'Web Development Competition — ACM HashTech',
-    description: 'Secured third runner-up position, showcasing practical web development skills, problem-solving, and innovative solutions under competitive conditions.',
-    link: '#', // Add link here
+    title: 'Decoding Data through Analytics',
+    source: 'IBM SkillsBuild',
+    description: 'Successfully completed the IBM SkillsBuild Project-Based Learning Program: Decoding Data Insights and Impact through Analytics, conducted in collaboration with IBM.',
+    link: 'https://drive.google.com/file/d/19UI04Dee6Gf4Z8BfA6T9Kc5WUZEICBon/view?usp=drive_link', // Add link here
   },
   {
     icon: <BookOpenCheck className="h-8 w-8 text-accent" />,

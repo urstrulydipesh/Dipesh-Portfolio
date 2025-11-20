@@ -10,7 +10,7 @@ const projects = [
     description:
       'A real-time chat app with authentication, chat rooms, and instant messaging using React, Node.js, Express, MongoDB, and Socket.IO. Responsive UI with scalable backend.',
     tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO'],
-    github: 'https://github.com/urstrulydipesh',
+    github: 'https://github.com/urstrulydipesh/Chat_App',
     live: '',
     status: 'Ongoing',
   },
