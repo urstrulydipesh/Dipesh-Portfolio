@@ -43,7 +43,7 @@ const achievements = [
     icon: <CalendarCheck className="h-8 w-8 text-accent" />,
     title: 'LeetCode Profile',
     source: 'Personal Achievement',
-    description: 'Maintained a 250+ day streak on LeetCode, reflecting discipline, consistency, and strengthening of DSA and competitive programming skills.',
+    description: 'Maintained a 300+ day streak on LeetCode, reflecting discipline, consistency, and strengthening of DSA and competitive programming skills.',
     link: 'https://leetcode.com/u/urstrulydipesh/', // Add link here
   },
 ];
