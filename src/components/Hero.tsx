@@ -44,7 +44,7 @@ export function Hero() {
             className="relative overflow-hidden group transition"
           >
             <Link
-              href="https://drive.google.com/file/d/1WNYgBLf21SgmYP_qAwJ263OjOkNa6rbu/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1Tkd0qGO9KXj8ovIILpeibC5mVRf-F3Im/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="relative z-10 flex items-center" 

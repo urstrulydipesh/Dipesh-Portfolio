@@ -3,26 +3,23 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
 const skillsData = {
-  Languages: ['C', 'C++', 'Java', 'Python', 'PHP', 'JavaScript' , 'TypeScript'],
-  Tools: ['GIT', 'GitHub', 'Google Colab', 'VS Code', 'Jupyter Notebook'],
-  Database: ['MySQL', 'MongoDB', 'Firebase'],
+  Languages: ['C', 'C++', 'Java', 'Python', 'SQL', 'JavaScript', 'TypeScript'],
   Frontend: [
     'HTML',
     'CSS',
     'JavaScript',
-    'Bootstrap',
+    'React.js',
+    'Next.js',
     'Tailwind CSS',
-    'ReactJs',
-    'BootStrap Studio',
+    'Bootstrap',
+    'Clerk Auth',
+    'WordPress',
   ],
-  Backend: ['PHP', 'NodeJs', 'REST APIs', 'Socket.io' , 'Express.js' , 'JWT' ],
-  'Soft Skills': [
-    'Leadership',
-    'Event Management',
-    'Writing',
-    'Public Speaking',
-    'Time Management',
-  ],
+  Backend: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication', 'Socket.io', '.NET', 'Server-side Rendering'],
+  'Core CSE Subjects': ['Object-Oriented Programming (OOPS)', 'Database Management Systems (DBMS)', 'Operating Systems (OS)', 'Computer Networks', 'Data Structures'],
+  'Database & Tools': ['MySQL', 'MongoDB', 'Convex', 'Git', 'GitHub Actions', 'VS Code', 'Docker', 'Jupyter', 'Power BI'],
+  'Audit & Compliance': ['IT Controls', 'Risk Assessment', 'Internal Controls', 'SOX', 'SOC 1', 'SOC 2'],
+  'Data & Analytics': ['Data Analysis', 'Process Evaluation', 'Data Visualization', 'User Analytics', 'Cloud & Security'],
 };
 
 export function Skills() {

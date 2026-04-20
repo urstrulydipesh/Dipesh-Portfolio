@@ -6,12 +6,21 @@ import Link from 'next/link';
 
 const projects = [
   {
+    title: 'CodeCraft - SaaS Code Editor',
+    description:
+      'A cloud-based SaaS code editor enabling users to write, execute, and manage code directly in the browser with real-time output. Engineered a secure sandboxed execution engine supporting multiple programming languages with efficient error handling and execution control.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Convex', 'Clerk Auth', 'Node.js', 'Cloud Services'],
+    github: 'https://github.com/urstrulydipesh/Code-Editor',
+    live: 'https://github.com/urstrulydipesh/Code-Editor',
+    status: 'Ongoing',
+  },
+  {
     title: 'Real-Time Chat Platform',
     description:
       'A real-time chat app with authentication, chat rooms, and instant messaging using React, Node.js, Express, MongoDB, and Socket.IO. Responsive UI with scalable backend.',
     tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO'],
     github: 'https://github.com/urstrulydipesh/Chat_App',
-    live: '',
+    live: 'https://github.com/urstrulydipesh/Chat_App',
     status: 'Ongoing',
   },
   {
@@ -20,8 +29,8 @@ const projects = [
       'A full-stack medical appointment booking system with JWT authentication, doctor directory, real-time scheduling, and patient dashboards using the MERN stack and TailwindCSS.',
     tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'TailwindCSS', 'JWT'],
     github: 'https://github.com/urstrulydipesh/MediCare-Doctor',
-    live: '',
-    status: 'Ongoing',
+    live: 'https://medi-care-doctor-56lm.vercel.app/',
+    status: 'Completed',
   },
   {
     title: 'Movie Recommendation System',
@@ -29,7 +38,7 @@ const projects = [
       'Content-based movie recommender using Python, Pandas, and Scikit-Learn with TF-IDF and cosine similarity. Includes a Streamlit frontend for real-time suggestions.',
     tags: ['Python', 'Pandas', 'Scikit-Learn', 'NLP', 'Streamlit'],
     github: 'https://github.com/urstrulydipesh/movie-recommender',
-    live: '',
+    live: 'https://github.com/urstrulydipesh/movie-recommender',
     status: 'Completed',
   },
   {

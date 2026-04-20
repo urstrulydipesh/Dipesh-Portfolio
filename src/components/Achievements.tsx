@@ -1,9 +1,16 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
-import { Award, BookOpenCheck, Users, CalendarCheck, Presentation, Activity } from 'lucide-react';
+import { Award, BookOpenCheck, Users, CalendarCheck, Presentation, Activity, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const achievements = [
+  {
+    icon: <Zap className="h-8 w-8 text-accent" />,
+    title: 'Automated Exam Seat Allocation System',
+    source: 'University-Wide Deployment',
+    description: 'Co-developed a scalable constraint-based seat allocation system for 1000+ students, ensuring conflict-free scheduling, optimized space utilization, and automated validation for efficient exam management. Actively used in university exams for large-scale seat allocation.',
+    link: 'https://seating-planning-v1-ipu.vercel.app/', // Add link here
+  },
   {
     icon: <Users className="h-8 w-8 text-accent" />,
     title: 'Membership Chair',
@@ -63,7 +70,7 @@ export function Achievements() {
         {achievements.map((item) => (
           <Card
             key={item.title}
-            className="relative transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 group bg-card/60 backdrop-blur-sm"
+            className="relative transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-2 group bg-card/60 backdrop-blur-sm flex flex-col"
           >
             <CardHeader className="flex flex-row items-center gap-4">
               {item.icon}
@@ -72,10 +79,10 @@ export function Achievements() {
                 <CardDescription>{item.source}</CardDescription>
               </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <p className="text-sm text-muted-foreground">{item.description}</p>
             </CardContent>
-            <CardFooter className="flex justify-end">
+            <CardFooter className="flex justify-end mt-auto">
               <Button
                 asChild
                 variant="default"

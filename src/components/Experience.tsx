@@ -6,6 +6,36 @@ import Link from 'next/link';
 
 const experiences = [
   {
+    role: 'Associate 1',
+    company: 'PwC India (Acceleration Center)',
+    period: 'April 2026 - Present',
+    description:
+      'Working in the Digital Assurance & Transparency (DAT) team, performing controls testing and supporting audit processes including risk assessments and compliance evaluations. Assisting in evaluating design and operating effectiveness of IT and business controls for SOX and SOC engagements, while building expertise in internal controls and audit methodologies. Collaborating with teams to analyze data, support client walkthroughs, and identify process improvements while adhering to risk management and compliance standards.',
+    tags: ['Digital Assurance', 'Audit', 'Controls Testing', 'SOX', 'SOC', 'Compliance', 'Risk Management'],
+    status: 'Current',
+    certificateLink: 'https://www.linkedin.com/posts/urstrulydipesh_pwc-big4-dat-ugcPost-7447285021486497793-sJDs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8kvmgBhukukGptBRtf_mAKeDS9giCmD4U',
+  },
+  {
+    role: 'SaaS Developer',
+    company: 'USICT — Major Academic Project',
+    period: 'January 2026 - May 2026',
+    description:
+      'Developed a cloud-based SaaS code editor enabling users to write, execute, and manage code directly in the browser with real-time output, eliminating the need for local development environments. Engineered a secure sandboxed execution engine supporting multiple programming languages, ensuring isolated runtime environments with efficient error handling and execution control. Gained hands-on experience with modern cloud technologies and SaaS architecture principles.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Convex', 'Clerk Auth', 'Node.js', 'Cloud Services'],
+    status: 'Current',
+    certificateLink: '',
+  },
+  {
+    role: 'Full Stack Web Developer',
+    company: 'USICT — Minor Academic Project ',
+    period: 'July 2025 - November 2025',
+    description:
+      'Built a MERN-based medical appointment booking system with JWT authentication and role-based access. Developed doctor directory with filters, real-time appointment scheduling with conflict detection, and a responsive patient dashboard. Automated booking workflows, reduced scheduling friction, and gained hands-on experience in RESTful API design and scalable systems.',
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JWT', 'TailwindCSS'],
+    status: 'Completed',
+    certificateLink: 'https://drive.google.com/file/d/1ieGq-u-TDeJ3zIKOJwSYJReJAeoc5af9/view?usp=drive_link', // Add certificate link
+  },
+  {
     role: 'Frontend Web Developer',
     company: 'IBM ',
     period: 'June 2024 - August 2024',
@@ -14,16 +44,6 @@ const experiences = [
     tags: ['HTML', 'CSS', 'JavaScript', 'UI/UX'],
     status: 'Completed',
     certificateLink: 'https://drive.google.com/file/d/1hlmmfGCFFcR_ugvddx5BJvwUs3XyTZy3/view', // Add certificate link
-  },
-  {
-    role: 'Full Stack Web Developer',
-    company: 'USICT — Academic Internship Project ',
-    period: 'July 2025 - November 2025',
-    description:
-      'Built a MERN-based medical appointment booking system with JWT authentication and role-based access. Developed doctor directory with filters, real-time appointment scheduling with conflict detection, and a responsive patient dashboard. Automated booking workflows, reduced scheduling friction, and gained hands-on experience in RESTful API design and scalable systems.',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JWT', 'TailwindCSS'],
-    status: 'Completed',
-    certificateLink: 'https://drive.google.com/file/d/1ieGq-u-TDeJ3zIKOJwSYJReJAeoc5af9/view?usp=drive_link', // Add certificate link
   },
 ];
 
@@ -65,6 +85,8 @@ export function Experience() {
                       className={`mb-2 sm:mb-0 ${
                         exp.status === 'Completed'
                           ? 'bg-green-500 text-white'
+                          : exp.status === 'Current'
+                          ? 'bg-yellow-500 text-black'
                           : 'bg-yellow-500 text-black'
                       }`}
                     >
@@ -90,10 +112,10 @@ export function Experience() {
                       </div>
 
                       {/* Certificate Button */}
-                      {exp.certificateLink && (
+                      {exp.certificateLink !== undefined && (
                         <div className="mt-6 flex justify-end">
-                          <Button asChild variant="outline" size="sm">
-                            <Link href={exp.certificateLink} target="_blank" rel="noopener noreferrer">
+                          <Button asChild variant="outline" size="sm" disabled={!exp.certificateLink}>
+                            <Link href={exp.certificateLink || '#'} target={exp.certificateLink ? '_blank' : undefined} rel={exp.certificateLink ? 'noopener noreferrer' : undefined}>
                               View Certificate
                             </Link>
                           </Button>
