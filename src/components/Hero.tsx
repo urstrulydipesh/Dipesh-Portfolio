@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Hero() {
   return (
@@ -76,6 +77,30 @@ export function Hero() {
             className="transform transition duration-300 hover:rotate-6 hover:scale-110"
           >
             <Linkedin className="h-8 w-8 text-muted-foreground transition-colors hover:text-accent" />
+          </Link>
+
+          <Link
+            href="mailto:dipesh.shah546@gmail.com"
+            aria-label="Gmail"
+            className="transform transition duration-300 hover:-rotate-6 hover:scale-110"
+          >
+            <Mail className="h-8 w-8 text-muted-foreground transition-colors hover:text-accent" />
+          </Link>
+
+          <Link
+            href="https://leetcode.com/u/urstrulydipesh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LeetCode"
+            className="transform transition duration-300 hover:rotate-6 hover:scale-110 flex items-center justify-center"
+          >
+            <Image
+              src="/Leetcode_logo.png"
+              alt="LeetCode"
+              width={32}
+              height={32}
+              className="h-8 w-8 object-contain opacity-70 hover:opacity-100 transition-opacity"
+            />
           </Link>
         </div>
       </div>
